@@ -10,7 +10,7 @@ public class FinalRethrow {
 
     public static void main(String[] args) throws IOException {
         try {
-            new FileInputStream("pom.xmxl").close();
+            new FileInputStream("pom.xml").close();
         } catch (final Exception e) {
             if(e instanceof IOException){
                 System.out.println("IOException");
