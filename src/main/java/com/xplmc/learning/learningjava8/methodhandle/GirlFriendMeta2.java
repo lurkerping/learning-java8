@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
 
 /**
  * meta data of girl friend class using method handles
+ *
+ * @author luke
  */
 public class GirlFriendMeta2 {
 
@@ -30,11 +32,10 @@ public class GirlFriendMeta2 {
                 .map(f -> {
                     MethodHandle mh = null;
                     try {
-                        StringBuilder s = new StringBuilder();
-                        s.append("set");
-                        s.append(f.getName().toUpperCase().substring(0, 1));
-                        s.append(f.getName().substring(1));
-                        mh = lk.findVirtual(GirlFriend.class, s.toString(), MethodType.methodType(void.class, String.class));
+                        String s = "set" +
+                                f.getName().toUpperCase().substring(0, 1) +
+                                f.getName().substring(1);
+                        mh = lk.findVirtual(GirlFriend.class, s, MethodType.methodType(void.class, String.class));
                     } catch (Exception e) {
                         //do nothing
                     }
@@ -45,11 +46,10 @@ public class GirlFriendMeta2 {
                 .map(f -> {
                     MethodHandle mh = null;
                     try {
-                        StringBuilder s = new StringBuilder();
-                        s.append("get");
-                        s.append(f.getName().toUpperCase().substring(0, 1));
-                        s.append(f.getName().substring(1));
-                        mh = lk.findVirtual(GirlFriend.class, s.toString(), MethodType.methodType(String.class));
+                        String s = "get" +
+                                f.getName().toUpperCase().substring(0, 1) +
+                                f.getName().substring(1);
+                        mh = lk.findVirtual(GirlFriend.class, s, MethodType.methodType(String.class));
                     } catch (Exception e) {
                         //do nothing
                     }

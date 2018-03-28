@@ -9,6 +9,8 @@ import java.util.concurrent.atomic.AtomicLong;
  * simple method handle example
  * simple conclusion: MethodHandle are not easy to use,
  * in some cases, MethodHandle didn't seem to faster either.
+ *
+ * @author luke
  */
 public class MethodHandleSimpleExample {
 

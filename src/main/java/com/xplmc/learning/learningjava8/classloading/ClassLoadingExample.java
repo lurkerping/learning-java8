@@ -8,6 +8,8 @@ import java.math.BigDecimal;
 
 /**
  * class loading parent-delegation model example
+ *
+ * @author luke
  */
 public class ClassLoadingExample {
 

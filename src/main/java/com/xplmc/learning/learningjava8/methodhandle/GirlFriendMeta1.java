@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 
 /**
  * meta data of girl friend class using reflection
+ *
+ * @author luke
  */
 public class GirlFriendMeta1 {
 
@@ -27,7 +29,7 @@ public class GirlFriendMeta1 {
                 .collect(Collectors.toList());
         GETTER = Arrays.stream(methods)
                 .filter(m -> m.getName().startsWith("get"))
-                .filter(m -> !m.getName().equals("getClass"))
+                .filter(m -> !"getClass".equals(m.getName()))
                 .collect(Collectors.toList());
     }
 

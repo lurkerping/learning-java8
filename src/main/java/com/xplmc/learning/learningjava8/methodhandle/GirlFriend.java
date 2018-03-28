@@ -2,6 +2,8 @@ package com.xplmc.learning.learningjava8.methodhandle;
 
 /**
  * a girl friend object using to demonstrating method handles' performance
+ *
+ * @author luke
  */
 public class GirlFriend {
 

@@ -12,6 +12,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * this is java 7 feature, fork and join simple example
  * sum 1+2+3+···+N
+ *
+ * @author luke
  */
 public class ForkJoinSimpleExample {
 

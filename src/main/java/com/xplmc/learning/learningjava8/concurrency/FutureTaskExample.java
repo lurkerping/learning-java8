@@ -12,6 +12,8 @@ import java.util.concurrent.FutureTask;
  * this is java 5 feature, FutureTask
  * 1/A Future that is runnable
  * 2/can run only one time
+ *
+ * @author luke
  */
 public class FutureTaskExample {
 
@@ -23,7 +25,6 @@ public class FutureTaskExample {
         //old way
         Future<String> f1 = es.submit(new ComputationTask(), "ok1");
         logger.info("f1, submitted");
-        logger.info("f1.get={}", f1.get());
         logger.info("f1.get={}", f1.get());
 
         //using FutureTask

@@ -8,6 +8,8 @@ import java.util.function.Supplier;
  * 1:static method
  * 2:arbitrary type
  * 3:existing object
+ *
+ * @author luke
  */
 public class MethodReferenceNotes {
 
